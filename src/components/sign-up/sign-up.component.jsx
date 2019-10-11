@@ -3,7 +3,7 @@ import React from 'react';
 import FormInput from '../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
 
-import { auth, createUserProfileDocument } from '../../firebase/firebase.utils'
+import { auth, createUserProfileDocument } from '../../firebase/firebase.utils';
 
 import './sign-up.styles.scss';
 
@@ -44,7 +44,6 @@ class Signup extends React.Component {
 
     handleChange = event => {
         const { name, value } = event.target
-        console.log('call', name)
         this.setState({ [name]: value })
     }
 
